@@ -9,7 +9,15 @@
 
 function adivinharNumero(max, palpite) {
   // TODO: implementar função
+  let num = Math.round(Math.random(0, max) * 11)
+
+  if (num == palpite){
+    return 'Acertou!'
+  }
+  else return 'Errou! Tente novamente!'
 }
+
+adivinharNumero(10, 10)
 
 
 // NÃO REMOVA O CÓDIGO ABAIXO
